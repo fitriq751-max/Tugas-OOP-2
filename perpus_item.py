@@ -1,3 +1,4 @@
+# A Book class to represent an item in the library system
 class Book:
     def __init__(self, title, author, isbn):
         self.title = title
@@ -12,4 +13,5 @@ class Book:
         return False
 
     def return_book(self):
+
         self.is_borrowed = False
