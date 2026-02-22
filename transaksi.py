@@ -1,6 +1,7 @@
 from perpus_item import Book
 from pengguna import Member, Staff
 
+# A class to manage the borrowing transactions between members and staff
 class BorrowTransaction:
     def __init__(self, book, member, staff, borrow_date):
         self.book = book
@@ -25,4 +26,5 @@ if __name__ == "__main__":
     staff_liza = Staff("Buk Liza", "S-001")
 
     bukti_pinjam_bilal = BorrowTransaction(buku_sejarah, member_bilal, staff_liza, "20-02-2026")
+
     bukti_pinjam_bilal.borrow_book()
